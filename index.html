@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ringraziamenti Tesi — Home</title>
+    <meta name="description" content="Ringraziamenti della tesi, stile arcade/pixel.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+  </head>
+  <body>
+    <main class="screen">
+      <header class="title">
+        <h1>RINGRAZIAMENTI</h1>
+        <p class="subtitle">Insert coin to start</p>
+      </header>
+
+      <nav class="menu">
+        <a class="btn" href="./pages/famiglia.html">FAMIGLIA</a>
+        <a class="btn" href="./pages/amici.html">AMICI</a>
+        <a class="btn" href="./pages/relatore.html">RELATORE</a>
+      </nav>
+
+      <section class="decor" aria-hidden="true">
+        <div class="heart-row">
+          <svg class="pixel-heart" viewBox="0 0 16 16" width="28" height="28">
+            <path fill="currentColor" d="M4 2h3v2h2V2h3v3h2v3h-2v2h-3v2H9v2H7v-2H6v-2H3V8H1V5h3z"/>
+          </svg>
+          <svg class="pixel-heart" viewBox="0 0 16 16" width="28" height="28">
+            <path fill="currentColor" d="M4 2h3v2h2V2h3v3h2v3h-2v2h-3v2H9v2H7v-2H6v-2H3V8H1V5h3z"/>
+          </svg>
+          <svg class="pixel-heart alt" viewBox="0 0 16 16" width="28" height="28">
+            <path fill="currentColor" d="M4 2h3v2h2V2h3v3h2v3h-2v2h-3v2H9v2H7v-2H6v-2H3V8H1V5h3z"/>
+          </svg>
+          <svg class="pixel-heart" viewBox="0 0 16 16" width="28" height="28">
+            <path fill="currentColor" d="M4 2h3v2h2V2h3v3h2v3h-2v2h-3v2H9v2H7v-2H6v-2H3V8H1V5h3z"/>
+          </svg>
+          <svg class="pixel-heart" viewBox="0 0 16 16" width="28" height="28">
+            <path fill="currentColor" d="M4 2h3v2h2V2h3v3h2v3h-2v2h-3v2H9v2H7v-2H6v-2H3V8H1V5h3z"/>
+          </svg>
+        </div>
+      </section>
+
+      <footer class="credits">
+        <p>© <span id="year"></span> — Grazie di cuore</p>
+      </footer>
+      <div class="ground" aria-hidden="true"></div>
+    </main>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+  </html>
+
+
