@@ -153,9 +153,70 @@ body {
   padding: 16px;
   max-width: 760px;
   box-shadow: 6px 6px 0 0 var(--shadow), 10px 10px 0 0 var(--accent-3);
+  color: var(--btn-fg); /* testo scuro per leggibilità */
 }
 
-.card h2 { margin-top: 0; }
-.card p { line-height: 1.6; }
+.card h2 { 
+  margin-top: 0; 
+  color: var(--btn-fg);
+}
+.card p { 
+  line-height: 1.6; 
+  color: var(--btn-fg);
+}
+
+/* --- Responsive --- */
+@media (max-width: 720px) {
+  .screen {
+    grid-template-rows: auto auto 1fr;
+    padding: 16px;
+  }
+  .title h1 {
+    font-size: 22px;
+  }
+  .subtitle { font-size: 11px; }
+  .menu {
+    width: 100%;
+    max-width: 420px;
+  }
+  .btn {
+    width: 100%;
+    padding: 14px 18px;
+    box-shadow: 3px 3px 0 0 var(--shadow), 6px 6px 0 0 var(--accent);
+  }
+  .title::after { width: 160px; height: 5px; }
+  .credits { font-size: 9px; }
+}
+
+@media (max-width: 420px) {
+  .title h1 { font-size: 18px; letter-spacing: 1px; }
+  .btn { padding: 12px 14px; border-width: 3px; }
+  .menu { gap: 12px; }
+}
+
+/* Responsive per pagine interne */
+@media (max-width: 720px) {
+  .wrapper {
+    padding: 16px;
+  }
+  .card {
+    padding: 12px;
+    max-width: 100%;
+    box-shadow: 4px 4px 0 0 var(--shadow), 8px 8px 0 0 var(--accent-3);
+  }
+  .card h2 { font-size: 14px; }
+  .card p { font-size: 10px; line-height: 1.5; }
+}
+
+@media (max-width: 420px) {
+  .wrapper { padding: 12px; }
+  .card { 
+    padding: 10px; 
+    border-width: 3px;
+    box-shadow: 3px 3px 0 0 var(--shadow), 6px 6px 0 0 var(--accent-3);
+  }
+  .card h2 { font-size: 12px; }
+  .card p { font-size: 9px; }
+}
 
 
