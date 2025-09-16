@@ -159,10 +159,12 @@ body {
 .card h2 { 
   margin-top: 0; 
   color: var(--btn-fg);
+  text-align: center;
 }
 .card p { 
   line-height: 1.6; 
   color: var(--btn-fg);
+  text-align: center;
 }
 
 /* --- Responsive --- */
